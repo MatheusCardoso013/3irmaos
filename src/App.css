@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f3f4f6;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
+  filter: brightness(40%);
+}
+
+@media (max-width: 600px) {
+  .banner {
+    height: 300px;
+  }
+}

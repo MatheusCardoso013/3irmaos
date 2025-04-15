@@ -1,0 +1,90 @@
+.secao-sobre {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cabecalho-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho-sobre h2 {
+    color: var(--azul-escuro);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.destaque-anos {
+    background: var(--azul-medio);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.destaque-anos span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.destaque-anos p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.descricao-sobre {
+    color: #444;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Horário */
+.horario-funcionamento {
+    background: var(--azul-escuro);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.horario-funcionamento h3 {
+    color: var(--detalhe-dourado);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.grade-horarios {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.grade-horarios span:nth-child(odd) {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .galeria-fotos {
+        grid-template-columns: 1fr;
+    }
+    
+    .destaques {
+        grid-template-columns: 1fr;
+    }
+    
+    .grade-horarios {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

@@ -1,0 +1,44 @@
+:root {
+    --azul-escuro: #1a237e;
+    --azul-medio: #303f9f;
+    --azul-claro: #7986cb;
+    --detalhe-dourado: #ffd700;
+    --branco: #ffffff;
+    --cinza-claro: #f5f5f5;
+    --cor-titulo-principal: #ffffff;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--azul-escuro), var(--azul-medio));
+    padding: 1rem 0;
+    position: relative;
+}
+
+.logo {
+    max-height: 80px;
+    margin-bottom: 1rem;
+}
+
+.titulo__principal {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-titulo-principal);
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.slogan {
+    color: var(--detalhe-dourado);
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
